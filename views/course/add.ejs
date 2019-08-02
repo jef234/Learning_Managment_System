@@ -1,0 +1,23 @@
+<%-include ../shared/header %>
+<div class="row mt-4">
+    <div class="offset-md-3 col-md-6">
+        <h1>Add Course</h1>
+        <hr />
+        <%if(typeof errorMsg !== "undefined" && errorMsg) {%>
+            <div class="alert alert-danger"><%=errorMsg%></div>
+        <%}%>
+        <form action="/courses/add" method="post">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea type="text" name="description" id="description" class="form-control" rows="5"></textarea>
+            </div>
+            <button class="btn btn-primary btn-lg">Add</button>
+        </form>
+    </div>
+
+</div>
+<%-include ../shared/footer %>

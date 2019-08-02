@@ -1,0 +1,20 @@
+<%-include ../shared/header %>
+<div class="row mt-4">
+    <div class="offset-md-2 col-md-8">
+        <h1>Tests for this Course</h1>
+        <hr />
+        <ul class="list-group">
+            <% for(var i=0; i<tests.length; i++) { %>
+                <% if(tests[i].completed) { %>
+                    <li class="list-group-item list-group-item-light" style="text-decoration: line-through">
+                <% } else { %>
+                    <li class="list-group-item">
+                <% } %>
+                        <%=tests[i].title%>
+                    </li>
+            <% } %>
+        </ul>
+    </div>
+
+</div>
+<%-include ../shared/footer %>
