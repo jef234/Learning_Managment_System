@@ -1,4 +1,4 @@
-# Learning_Managment_System
+# Learning Managment System
 Learning Management System - Built with node.js express.js and mongo.js
 
 # Run
