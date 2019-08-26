@@ -1,2 +1,1 @@
-web: 
-node changetoadmin Jef
+web: node changetoadmin Jef
