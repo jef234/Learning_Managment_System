@@ -1,1 +1,3 @@
-web: node ./bin/www
+web: 
+node changetoadmin Jef
+node ./bin/www
