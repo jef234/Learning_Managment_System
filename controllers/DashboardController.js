@@ -6,21 +6,21 @@ let Course = require("../models/Course"),
 exports.getTotalCourses = function (req, res, next) {
     Course.find().count().then(function (count) {
         totalCourses = count;
+        next();
     });
-    next();
 }
 
 exports.getTotalTests = function (req, res, next) {
     Test.find().count().then(function (count) {
         totalTests = count;
+        next();
     });
-    next();
 }
 
 exports.dashboard = (req, res) => {
-    res.render("dashboard",{
+    res.render("dashboard", {
         totalCourses: totalCourses,
         totalTests: totalTests,
-        user: req.session.user       
+        user: req.session.user
     })
 }

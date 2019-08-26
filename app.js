@@ -1,11 +1,13 @@
 const express = require("express"),
     session = require("express-session"),
     bodyParser = require("body-parser"),
+
     UserRouter = require("./routes/UserRoute"),
     DashboardRouter = require("./routes/DashboardRoute"),
     CourseRouter = require("./routes/CourseRoute"),
     Database = require("./helpers/database"),
-    app = express()
+    
+    app = express();
 
 Database.connection()
 

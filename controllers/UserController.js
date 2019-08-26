@@ -63,7 +63,7 @@ exports.logout = (req, res) => {
 }
 
 exports.authMiddleware = function (req, res, next) {
-    if(typeof req.session.user === "undefined") {
+    if (typeof req.session.user === "undefined") {
         res.redirect("/login");
     } else {
         next();
