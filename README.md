@@ -6,4 +6,4 @@ mongod --dbpath (db path <c:\Mongodb\data\db>) --port 27018
 npm start
 
 # Admin privilege
-node changetoadmin <your username>
+node changetoadmin <yourusername>
